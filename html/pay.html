@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单确认页——支付</title>
+		<link rel="shortcut icon" type="image/icon" href="../img/title.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/pay/pay.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pay/main.css"/>
+		<style>
+			*{margin:0;padding:0;}
+			select{height:26px;padding:3px 4px;width:150px;}
+			#box label span{float:left;}
+			#box span{display:inline-block;line-height:26px;padding-left:8px;}
+			.hide{display:none;}
+		</style>
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		<script>
+			$(function(){
+				$.ajax({
+					type:"get",
+					url:"../php/checkLogin.php",
+					async:true,
+					success:function(data){
+						var data = JSON.parse(data);
+						if(data.user==false){
+								$("#form").hide()
+								var tip = '<h1 style="font-size:18px;padding:30px;text-align:center;">用户未登录，请先<a style="font-size:16px;color:#f00;" href="login.html">&nbsp;登录&nbsp;</a><h1>';
+								$(".wrapper").html(tip)
+						}else{
+							$("#form").show()
+						}
+					}
+				})
+			})
+		</script>
+		
+		<script type="text/javascript" src="../lib/area_array.js" ></script>
+		<script type="text/javascript" src="../lib/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/common/common.js" ></script>
+		<script type="text/javascript" src="../js/pay/pay0.js" ></script>
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header"></div>
+		<!-- logo -->
+		<div class="head_logo">
+			<div class="logo">
+				<a href="index.html">
+					<img src="../img/shopCar/logo0.jpg"/>
+					<img src="../img/shopCar/logo1.png"/>
+				</a>	
+			</div>
+			<div class="flow-step">
+				<ul>
+					<li class="active">下订单</li>
+					<li>去付款</li>
+					<li>确认收货</li>
+					<li>评价</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 订单 -->
+		<div class="wrapper">
+			<form action="##" id="form" method="post">
+				<!-- 收货人信息 -->
+				<div class="container">
+					<table>
+						<tbody>
+							<tr>
+								<td class="cell-1">收货人信息 </td>
+								<td class="cell-2">
+									<ul class="address-list">
+										<li>
+											<label>
+												<input type="radio" />
+												<span>
+													<strong>***</strong>
+													 四川 成都市 四川省成都市青羊区 183****6207
+												</span>
+											</label>
+											<div class="operate">
+												<a href="javascript:">编辑</a>
+												<a href="javascript:">删除</a>
+											</div>
+										</li>
+										<li class="add-edits">
+											<label>
+												<input type="radio" name="addNewAdress">添加新地址
+											</label>
+											<div class="closeBtn">
+												<a href="javascript:">关闭</a>
+											</div>
+											<div class="infor">
+												<!--收货人-->
+												<dl>
+													<dt><em class="xh">*</em>收货人：</dt>
+													<dd>
+														<input type="text" class="text">
+														<span class="error">请填写收货人姓名</span>
+													</dd>
+												</dl>
+												<!--所在地区-->
+												<dl class="area">
+													<dt><em class="xh">*</em>所在地区：</dt>
+													<dd class="clearfix">
+														<div class="box" id="box">
+															<label class="label0"><span>省&emsp;份：</span><select id="Cont"><option value="0">---请选择省份---</option></select></label>
+															<label class="label1"><span>城&emsp;市：</span><select id="City" disabled="true"><option value="0">---请选择城市---</option></select></label>
+															<label class="label2"><span>区&nbsp;/&nbsp;县：</span><select id="Sent" disabled="true"><option>---请选择区/县---</option></select></label>
+														</div>
+														<span class="error">请选择地区</span>
+													</dd>
+												</dl>
+												<!--详细地址-->
+												<dl class="address">
+													<dt><em class="xh">*</em>详细地址：</dt>
+													<dd>
+														<input type="text" class="text" name=""/>
+														<span class="error">请填写详细地址</span>
+													</dd>
+												</dl>
+												<!--电话号码-->
+												<div class="number">
+													<dl>
+														<dt><em class="xh">*</em>手机号码：</dt>
+														<dd>
+															<input type="text" class="text" maxlength="11">
+															<em class="tips">或</em>
+														</dd>
+													</dl>
+													<dl class="fixed-line">
+														<dt><em class="xh">*</em>固定电话：</dt>
+														<dd>
+															<input name="tel" type="text" id="text" class="text" maxlength="17"/>
+															<em class="tips">手机号码和固定电话请至少输入一个</em><!--class="error"-->
+														</dd>
+													</dl>
+												</div>
+												<!--默认地址-->
+												<label class="setup-default">
+													<input type="checkbox" class="checkbox">设置为默认地址
+												</label>
+												<input type="button" class="w120-btn" value="确认收货地址">
+											</div>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+				<!-- 商品订单 -->
+				<div class="order-current">
+					<table>
+						<tbody>
+							<tr>
+								<td class="cell-1">
+									<label>
+										<input type="radio" checked="checked"/>商品订单1
+									</label>
+								</td>
+								<td class="cell-2">
+									<table class="goods">
+										<tbody>
+											<tr>
+												<th class="information">商品信息</th>
+												<th class="color-suits">颜色套装</th>
+												<th class="saletype">销售类型</th>
+												<th class="price">单价</th>
+												<th class="agio">优惠</th>
+												<th class="amount">数量</th>
+												<th class="total">总价</th>
+											</tr>
+											<tr>
+												<th class="information">
+													<a href="##" class="pic"><img src=""/></a>
+													<h3 class="title">
+														<a href="##">【顺丰包邮 送钢化膜 手机壳】华为 P9（EVA-AL10/高配版/全网通）</a>
+													</h3>
+												</th>
+												<th class="color-suits">
+													<div class="color">金色行货64GB</div>
+													<div class="suits">
+														<span>官方标配</span>
+													</div>
+												</th>
+												<th class="saletype">-</th>
+												<th class="price">¥3234</th>
+												<th class="agio">--</th>
+												<th class="amount">1</th>
+												<th class="total">3234</th>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+				<!--订单备注-->
+				<div class="order-note">
+					<table>
+						<tbody>
+							<tr>
+								<td class="cell-1">订单备注</td>
+								<td class="cell-2">
+									<textarea placeholder="您可以填写对商品、配送的要求..."></textarea>
+									<span><em>0</em>/200</span>
+								</td>
+								<td class="cell-3">
+									<ul class="total-price">
+										<li>
+											<span>商品总价：</span>
+											<em class="goods-total-price">￥0</em>
+										</li>
+										<li>
+											<span>运费：</span>
+											<em class="goods-freight-price">￥0</em>
+										</li>
+										<li>
+											<span class="">订单总计：</span>
+											<em class="total goods-total-price" id="total-price">￥0</em>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+			</form>
+			<!-- 提交 -->
+			<div class="submit">
+				<input type="button" value="提交订单" class="submit-btn"/>
+			</div>	
+		</div>
+		<!-- 二维码 -->
+		<div class="pay">
+			<p>拿起手机扫一扫二维码</p>
+			<img src="../img/pay/pay.png" />
+			<div class="close">X</div>
+		</div>
+		
+		<!-- footer -->
+		<div class="footer1">
+			<p class="links">
+				<a href="##">关于商城</a>|
+				<a href="##">营销中心</a>|
+				<a href="##">服务中心</a>|
+				<a href="##">联系我们</a>|
+				<a href="##">发展历程</a>|
+				<a href="##">媒体报道</a>
+			</p>
+			<p>
+				<span class="copyright">&copy;
+					<script>
+						var now = new Date();
+						var nowYear = now.getFullYear();
+						document.write(nowYear);
+					</script>
+					购物商城在线作者 版权所有. 京ICP备09041801号-182 
+					<a href="http://www.miibeian.gov.cn/">京ICP证010391号</a>
+				</span>
+			</p>
+			<div class="bottom">
+				<a href="##"><img src="../img/shopCar/beian.png"/></a>
+				<a href="##"><img src="../img/shopCar/jingcha.png"/></a>
+				<a href="##"><img src="../img/shopCar/cert.png"/></a>
+			</div>
+		</div>
+		<script>
+			loadHtml("common/header.html",".header");
+		</script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+		<script type="text/javascript" src="../js/pay/bootstrap.min.js" ></script>
+		<script src="../js/pay/distpicker.data.js"></script>
+		<script src="../js/pay/distpicker.js"></script>
+		<script src="../js/pay/main.js"></script>
+		<script type="text/javascript" src="../js/common/checkuser.js" ></script>
+	</body>
+</html>

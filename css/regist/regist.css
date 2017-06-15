@@ -1,0 +1,74 @@
+*{margin:0;padding:0;}
+body{font-size:12px;font-family: "微软雅黑";}
+a{text-decoration:none;}
+li{list-style:none;}
+/*------ header --------*/
+.header{width:1003px;height:60px;margin-bottom:35px;margin:15px auto 30px;}
+.header img{float:left;margin-right:8px;border-right:1px solid #E6E6E6;padding-right:8px;}
+.header span{line-height:60px;font-size:11px;margin-left:9px;}
+.header p{float:right;line-height: 60px;}
+.header p a{color:#cc0000;font-weight:bold;}
+/*------ wrapper --------*/
+.wrapper{width:1003px;height:710px;margin:15px auto 70px;border:1px solid #e6e6e6;}
+.wrapper .h1{font-size:17px;line-height:60px;text-indent:90px;margin-bottom:30px;background:#fafafa;color:#999;}
+/*------ wrapper left--------*/
+.wrapper .left{float:left;padding-left:90px;}
+.left .pNum{width:252px;height:36px;float:left;font-size:15px;line-height: 36px;background:url(../../img/regist/regist.png) no-repeat -97px -235px;margin-bottom:30px;color:#CC0000;text-indent:78px;
+	border-top:2px solid #CC0000;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;
+	user-select:none;-moz-user-select: none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none;}
+.left .span{border-bottom:1px solid #e6e6e6;display:inline-block;margin-bottom: 30px;height:38px;width:252px;}
+/*------ wrapper left  regist_form --------*/
+.hide{display:none;}
+.show{display: inline-block;}
+.regist_form input[type="text"],.regist_form input[type="password"]{height:30px;font-size:15px;} 
+.regist_form input[type="text"]:focus,.regist_form input[type="password"]:focus{outline-color:#CC0000;}
+.regist_form{height:35px;padding-bottom:35px;position:relative;}
+.regist_form label{color:#666;padding-right:10px;line-height:30px;display:inline-block;float:left;}
+.error_tip{color:#ff4747;padding-left:25px;background:url(../../img/regist/bg.png) no-repeat -270px -91px;font-style:normal;}
+.right_tip{background:url(../../img/regist/right.png) no-repeat 5px 0;padding-left:25px;width:20px;height:15px;}
+.regist_form .xh{color:#ff481a;padding:0 8px;}
+.regist_form .tips{position:absolute;left:83px;bottom:12px;color:#aaa;}
+#error_tip6{line-height:1em;}
+/* 手机号码 */
+.phoneNum,.password,.copyPassword{width:260px;}
+/* 验证码  */
+.code{width:150px;float:left;margin-right:10px;}
+.codeBtn{width:90px;height:33px;float:left;cursor:pointer;border:1px solid #000;outline:none;letter-spacing:0.5em;}
+.regist_form a#codeBtn1{line-height:33px;padding-left:10px;}
+.regist_form a#codeBtn1:hover{color:#CC0000;text-decoration:underline;}
+/* 手机验证码  */
+.phoneCode{width:150px;margin-right:10px;} 
+.phoneCodeBtn{font-size:10px;line-height:33px;height:33px;padding:0 7px;cursor:pointer;text-align: center;}
+/* 密码  text宽度*/
+/* 确认密码   text宽度*/
+.label1{margin-left:-12px;}
+.regist_form img.eye{width: 25px;height:25px;position:absolute;right:170px;top:5px;z-index:99;cursor:pointer;}
+/* 用户协议 */
+.xieyi{height:25px;line-height:25px;color:#999;padding:0 0 25px 84px;}
+.xieyi a:hover{text-decoration:underline;color:#CC0000;}
+.xieyi label{padding:0 5px;}
+/* 注册按钮   */
+.left .btn{width:292px;height:38px;color:#fff;font:bold 16px/41px;margin:8px 0 0 75px;cursor:pointer;border:none;outline:none;background:url(../../img/regist/bg.png) no-repeat 0 0;}
+.left .btn:hover{background-position:0 -42px;}
+
+/*------ wrapper rightBar --------*/
+.wrapper .rightBar{float:right;width:250px;padding-left:26px;border-left:1px solid #f5f5f5;}
+.r_login{color:#0a15f4;}
+.r_login:hover{color:#CC0000;text-decoration:underline;}
+.rightBar p{line-height:23px;color:#666;margin-bottom:5px;width:163px;}
+.rightBar .a{display:block;margin-top:15px;height:35px;}
+.rightBar .a1{background:url(../../img/regist/weixin.png) no-repeat;}
+.rightBar .a2{background:url(../../img/regist/regist.png) no-repeat 0 0;}
+.rightBar .a3{background:url(../../img/regist/regist.png) no-repeat 0 -37px;}
+.rightBar .a4{background:url(../../img/regist/regist.png) no-repeat 0 -75px;}
+.rightBar .a5{background:url(../../img/regist/regist.png) no-repeat 0 -111px;}
+
+/*------ footer--------*/
+.footer{border-top:1px solid #eee;clear:both;height:50px;}
+.f_com{margin:10px auto;width:1003px;color:#757575;}
+.f_com ul{float:left;}
+.f_com ul li{float:left;padding:0 6px;}
+.f_com ul li a{color:#757575;}
+.f_com ul li:hover a{color:#CC0000;text-decoration:underline;}
+.f_com ul li:first-child{padding:0;}
+.f_com p{float:right;}

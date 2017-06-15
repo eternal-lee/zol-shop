@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商场网站——注册</title>
+		<link rel="shortcut icon" type="image/icon" href="../img/title.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/regist/regist.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<a href="index.html" target="_blank"><img src="../img/regist/shop_182x60.png"/></a><span>在线商城网上商场</span>
+			<p>已经有商城网站账号？&nbsp;<a href="login.html" target="_blank">立即登录</a></p>
+		</div>
+		<div class="wrapper">
+			<p class="h1">30秒快速注册，加入商城网站</p>
+			<div class="left">
+				<div class="pNum">用手机号注册</div><span class="span"></span><br/>
+				<!--注册  -->
+			<form action="login.html" method="get">
+				<div class="regist">	
+					<!-- 手机号 -->
+					<div class="regist_form">
+						<label for="phoneNum"><em class="xh">*</em>手机号：</label>
+							<input type="text" maxlength="11" name="username" id="phoneNum" class="phoneNum">
+						<i id="error_tip1" class="error_tip hide">请填写手机号码</i>
+						<div class="tips">请填写手机号码</div>
+					</div>
+					<!-- 验证码 -->
+					<div class="regist_form">
+						<label for="code"><em class="xh">*</em>验证码：</label>
+							<input type="text" name="txt" id="code" class="code">
+							<img src="../php/img.php" title="刷新获取" alt="Code" class="codeBtn" id="imgCode" onclick="this.src='../php/img.php?src='+Math.random();"/>
+							<a href="javascript:void(0)" id="codeBtn1" onclick="document.getElementById('imgCode').src='../php/img.php?src='+Math.random();">换一张？</a>
+						<i id="error_tip2" class="error_tip hide"">请填写验证码</i>
+						<div class="tips">请填写图片4位验证码</div>
+					</div>
+					<!--密码 -->
+					<div class="regist_form">
+						<label for="password"><em class="xh">&nbsp;&nbsp;&nbsp;*</em>密码：</label>
+							<input type="password" name="pwd" id="password" class="password">
+						<img src="../img/regist/eye.png" id="eye" class="eye" style="width: 25px;height:25px;position:absolute;right:170px;top:5px;z-index:99;cursor:pointer;"/>
+						<i id="error_tip4" class="error_tip hide"">请填写密码</i>
+						<div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+					</div>
+					<!--确认密码-->
+					<div class="regist_form">
+						<label for="copyPassword" class="label1"><em class="xh">*</em>确认密码：</label>
+							<input type="password" name="txt" id="copyPassword" class="copyPassword">
+						<i id="error_tip5" class="error_tip hide"">请填写确认密码</i>
+						<div class="tips">再次输入密码</div>
+					</div>
+					<!--用户协议 -->
+					<div class="xieyi">
+						<input type="checkbox" id="checkbox" class="checkbox" checked/><label for="checkbox">同意</label>
+						<a href="#">《商城用户协议》 </a><a href="#">《隐私权说明》</a> <br/>
+						<i id="error_tip6" class="error_tip hide">请先阅读用户协议</i>
+					</div>
+					<input type="button" id="btn" class="btn" value="注  册"/>
+				</div>
+			</form>
+			</div><!-- left 结束-->
+			<div class="rightBar">
+				<p>如果您已经注册，请	<a href="login.html" class="r_login">直接登录</a><br/>或者用以下方式登录：</p>
+				<a href="javascript:" class="a a1"></a>
+				<a href="javascript:" class="a a2"></a>
+				<a href="javascript:" class="a a3"></a>
+				<a href="javascript:" class="a a4"></a>
+				<a href="javascript:" class="a a5"></a>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="f_com">
+				<ul>
+					<li><a href="##">关于ZOL商城</a></li>
+					<li>|</li>
+					<li><a href="##">联系我们</a></li>
+					<li>|</li>
+					<li><a href="##">帮助中心</a></li>
+				</ul>
+				<p>&copy;
+					<script>
+						document.write((new Date()).getFullYear())
+					</script>
+					. 购物商城 作者版权所有</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../lib/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/regist/regist.js" ></script>
+	</body>
+</html>

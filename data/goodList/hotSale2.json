@@ -1,0 +1,30 @@
+{
+	"g0":{
+		"num":1,
+		"href":"##",
+		"src":"../img/shopLists/bar4.jpg",
+		"title":" 苹果 iPhone 7 Plus（全网通）",
+		"price":"￥6388"
+	},
+	"g1":{
+		"num":2,
+		"href":"##",
+		"src":"../img/shopLists/bar5.jpg",
+		"title":" 苹果 iPhone 7（全网通） ",
+		"price":"￥5580"
+	},
+	"g2":{
+		"num":3,
+		"href":"##",
+		"src":"../img/shopLists/bar6.jpg",
+		"title":"HTC 10（骁龙820版/联通4G）",
+		"price":"￥4459"
+	},
+	"g3":{
+		"num":4,
+		"href":"##",
+		"src":"../img/shopLists/bar7.jpg",
+		"title":"vivo X7（全网通）",
+		"price":"￥2242"
+	}
+}

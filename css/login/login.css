@@ -1,0 +1,80 @@
+*{margin:0;padding:0;}
+body{background:#fafafa;font-size:12px;font-family: "微软雅黑";}
+a{text-decoration:none;}
+li{list-style:none;}
+/*------ header --------*/
+.header{width:960px;height:60px;margin-bottom:35px;margin:15px auto 30px;}
+.header img{float:left;margin-right:8px;border-right:1px solid #E6E6E6;padding-right:8px;}
+.header span{line-height:60px;font-size:11px;margin-left:9px;}
+.header p{float:right;line-height: 60px;}
+.header p a{color:#cc0000;font-weight:bold;}
+/*------ main --------*/
+.wrapper{width:960px;height:410px;margin:15px auto;}
+.main{height:350px;border:1px solid #f2f2f2;}
+.main .logo{background:#fff;width:380px;height:350px;float:right;}
+#loginForm{clear:both;}
+/*------ logo commmon --------*/
+.logo .login{width:263px;margin:0 auto;}
+h2{color:#666;font-size:15px;float:left;margin:25px 0 6px 0;}
+.tab1{color:#4b4b4b;float:right;margin:25px 0 6px 0;cursor:pointer;padding-left:20px;background:url(../../img/login/shop_login_bg.png) no-repeat -277px -117px;}
+.tab1:hover{color:#CC0000;text-decoration:underline;}
+.login .error_tip{width:240px;height:20px;line-height:20px;padding-left:25px;margin-bottom:5px;position:absolute;left:0;top:0;
+color:#ff3333;background:#fff2f2 url(../../img/login/bg.png)no-repeat -269px -89px;border:1px solid #ff9999;}
+/*------ logo tab切换  common--------*/
+.login_com{padding-top:28px;width:266px;position:relative;}
+.hide{display:none;}
+.show{z-index:99;display:block;}
+.txt{height:36px;margin-bottom:10px;padding-left:5px;border:1px solid #ccc;outline:none;}
+.txt:focus{border:1px solid #CC0000;}
+.txt1,.txt2{width:229px;padding-right:30px;position:relative;}
+.tip1,.tip2,.tip3{position:absolute;width:17px;height:17px;right: 15px;background:url(../../img/login/right.png) no-repeat;}
+.tip1{top: 40px;}
+.tip2{top: 86px;}
+.tip3{top:40px;}
+                  /*------ logo_normal --------*/
+/*-------  logo normal ----------*/
+.logo_tip{float:right;color:#134ba0;cursor:pointer;display:block;margin-bottom:20px;}
+.logo_tip:hover{text-decoration:underline;color:#CC0000;}
+.loginBtn{clear:both;width:263px;height:36px;text-align:center;color:#fff;font-size:15px;
+cursor:pointer;background:url(../../img/login/bg.png);line-height:40px;outline:none;border:none;}
+.loginBtn:hover{background-position:0 -41px;}
+/*-------  logo phone ----------*/
+.txt0{width:175px;}
+.code{width:80px;height:36px;float:right;text-align:ccenter;line-height:36px;letter-spacing:0.3em;border:1px solid #000;cursor:pointer;outline: none;}
+.phone{width:266px;height:38px;margin-bottom:10px;border:1px solid #E6E6E6;}
+.txt5{width:172px;border:none;outline:none;}
+.code,.msg{background:#eee;}
+.msg{height:38px;width:89px;border-right:1px solid #E6E6E6;cursor:pointer;border:none;outline:none;}
+.txt5:focus{border:none;outline:none;}
+.txt5:focus .phone{border-color:#CC0000;}    /* 小问题  待解决   */
+/*------ logo_normal collaborate--------*/
+.collaborate{height:18px;margin-top:15px;}
+.collaborate .xian{height:1px;width:87px;background:#f0f0f0;float:left;margin-top:10px;}
+.collaborate p{float:left;padding:0 8px;}
+.logo_footer{margin:10px 0 0;height:38;}
+/*------ logo_normal a--------*/
+.logo_footer a{float:left;width:38px;height:38px;display:block;margin-left:12px;}
+.logo_footer .weixin{margin-left:25px;background:url(../../img/login/bgs2.png) 0 0;}
+.weixin:hover{background-position:0 -38px;}
+.sina{background:url(../../img/login/bg.png) 0 -81px;}
+.sina:hover{background-position:0 -121px;}
+.qq{background:url(../../img/login/bg.png) -38px -81px;}
+.qq:hover{background-position:-38px -121px;}
+.alipay{background:url(../../img/login/bg.png) -78px -81px;}
+.alipay:hover{background-position:-78px -121px;}
+.baidu{background:url(../../img/login/bg.png) -116px -81px;}
+.baidu:hover{background-position:-116px -121px;}
+/*------ footer--------*/
+.footer{border-top:1px solid #eee;clear:both;}
+.f_com{margin:10px auto;width:960px;color:#757575;}
+.f_com ul{float:left;}
+.f_com ul li{float:left;padding:0 6px;}
+.f_com ul li a{color:#757575;}
+.f_com ul li:hover a{color:#CC0000;text-decoration:underline;}
+.f_com ul li:first-child{padding:0;}
+.f_com p{float:right;}
+
+
+
+
+

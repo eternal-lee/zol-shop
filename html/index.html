@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商场网站首页</title>
+		<link rel="shortcut icon" type="image/icon" href="../img/title.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shouye/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../lib/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../lib/commonTool.js" ></script>
+		<script type="text/javascript" src="../js/common/common.js" ></script>
+		<script type="text/javascript" src="../js/shouye/index1.js" ></script>
+		<script type="text/javascript" src="../js/common/checkuser.js" ></script>
+	</head>
+	<body>
+		<div class="header"></div>	
+		<!-- header 结束  -->
+		<!-- main 开始  -->
+		<div class="main">
+			<!-- search  -->
+			<div class="search" id="search">
+				<a href="index.html"><img src="../img/shouye/shop_182x60.png" class="img1"/></a><span>在线商城网上商场</span>
+				<div class="search_input" id="search_input">
+					<input type="text" id="searchTxt" class="searchTxt" /><input type="button" id="searchBtn" class="searchBtn" value="搜索">
+					<div id="tip" style="top:37px;">
+						<ul id="tipList"></ul>
+					</div>
+				</div>
+				<a href="##"><img src="../img/shouye/0.jpg" class="img0"/></a>
+				<ul class="moreLink">
+					<a href="##">三星s7 Edge</a>
+					<a href="##">华为P9</a>
+					<a href="##">戴尔小XPS仅4999！</a>
+					<a href="##">GTX1060</a>
+					<a href="##"> 九阳豆浆机直降100！</a>
+					<a href="##">热销机械键盘</a>
+				</ul>	
+			</div>	
+			<!-- nav -->
+			<div class="navBox">
+				<ol class="nav">
+					<li><a href="javascript:">首页</a></li>
+					<li><a href="shopLists.html" target="_blank">团购</a></li>
+					<li><a href="shopLists.html" target="_blank">手机馆</a></li>
+					<li><a href="shopLists.html" target="_blank">智能之家</a></li>
+					<li><a href="shopLists.html" target="_blank">DIY攒机馆</a></li>
+					<li><a href="shopLists.html" target="_blank">限时抢购</a></li>
+				</ol>
+				<div class="nav-tip"><a href="http://tuan.zol.com/26438.html" target="_blank">苹果 iPhone 7 亮黑色 仅限10台！</a></div>
+				<div class="nav-container"></div>	<!-- 二级导航 加载 -->
+			</div>
+			<!-- banner  -->
+			<div class="banner">
+				<div class="side">
+					<div>
+						<a href="##"><img src="../img/shouye/baozhang20160320.jpg"/></a>
+					</div>
+					<div class="title">
+						<h2>商城公告</h2>
+						<ul class="ul-side">
+							<li><a href="##">商城1元夺宝活动关闭通知</a></li>
+							<li><a href="##">[新品]iPhone 亮黑色 仅限10台！</a></li>
+							<li><a href="##">[省千元]联想710S 256G版4499元！</a></li>
+							<li><a href="##">[现货]1060甜品级显卡热卖 ！</a></li>
+							<li><a href="##">[福利]升级多多！小编攒机福利！</a></li>
+						</ul>
+					</div>	
+				</div> <!-- side 结束 -->
+				<div id="box" class="box">
+					<div class="inner" id="inner">
+						<ul class="ul_box" id="ul_box">
+							<li><a href="##"><img src="../img/shouye/img2.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/img1.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/img0.jpg"/></a></li>
+						</ul>
+					</div>	
+					<div class="prev" id="prev">&lt;</div>
+					<div class="next" id="next">&gt;</div>
+					<div class="tab" id="tab">
+						<div class="active">1</div>
+						<div class="">2</div>
+						<div class="">3</div>
+					</div>
+				</div>
+			</div><!--  banner  结束-->
+			<!-- wraper -->
+			<div class="wrapper">
+				<div class="section tuan-section" id="first">
+					<div class="section-title">
+						<h2>精品团购</h2>
+						<a href="##" class="more">更多团购&gt;</a>
+					</div>
+					<div class="tuan-list">
+						<a href="##">
+							<img src="../img/shouye/img3.jpg"/>
+						</a>
+						<a href="##">
+							<img src="../img/shouye/img4.jpg"/>
+						</a>
+						<a href="##">
+							<img src="../img/shouye/img5.jpg"/>
+						</a>
+						<a href="##">
+							<img src="../img/shouye/img6.png"/>
+						</a>
+					</div>
+					<div class="img7">
+						<img src="../img/shouye/img7.jpg"/>
+					</div>
+				</div>
+				<div class="section te-section" id="second">
+					<div class="section-title">
+						<h2>特色购</h2>
+					</div>
+					<div class="te-list">
+						<ul></ul>
+					</div>
+				</div>
+				<div class="section mobile-section" id="three">
+					<div class="section-title">
+						<h2>1F 手机通讯</h2>
+						<ul class="section-ul">
+							<li><a href="##">华为</a></li>
+							<li>|</li>
+							<li><a href="##">苹果</a></li>
+							<li>|</li>
+							<li><a href="##">三星 </a></li>
+							<li>|</li>
+							<li><a href="##">魅族</a></li>
+							<li>|</li>
+							<li><a href="##">oppo </a></li>
+							<li>|</li>
+							<li><a href="##">小米</a></li>
+						</ul>
+					</div>	
+					<div class="clearfix">
+						<div class="main-figure">
+							<a href="##"><img src="../img/shouye/img17.jpg"/></a>
+						</div>
+						<div class="figure-list">
+							<ul id="ul_three">
+								<li class="item wide">
+									<div class="focus-inner" id="focusOne">
+										<ul class="mobileFocus" id="mobileFocus"></ul>	
+										<div id="prev1" class="prev0">&lt;</div>
+										<div id="next1" class="next0">&gt;</div>
+										<div id="tab1" class="tab0">
+											<div class="active"></div>
+											<div class=""></div>
+											<div class=""></div>
+										</div>	
+									</div>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">乐视 乐Max 2 全网通</a>
+									</div>	
+									<p>限时促销 820芯片</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img21.jpg"/>
+									</a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">魅族 PRO 6 全网通</a>
+									</div>	
+									<p>限时低价 全新设计</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img22.jpg"/>
+									</a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">360 手机N4S</a>
+									</div>	
+									<p>4GB+64GB 仅售1449</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img23.jpg"/>
+									</a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">酷派 cool1（全网通）</a>
+									</div>	
+									<p>32G内存 仅售1098元！</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img24.jpg"/>
+									</a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">小米Max 全网通16GB</a>
+									</div>	
+									<p>下单赠品 仅售999元！</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img26.jpg"/>
+									</a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">360 手机N4S</a>
+									</div>	
+									<p>4GB+64GB 仅售1449</p>
+									<a href="##" class="pic">
+										<img src="../img/shouye/img23.jpg"/>
+									</a>
+								</li>
+							</ul>		
+						</div>	
+					</div>
+					<div class="brand-list" id="brand-list">
+						<ul>
+							<li><a href="##"><img src="../img/shouye/small0.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small1.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small2.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small3.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small5.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small6.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small7.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small8.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small9.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small10.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section computer-section" id="four">
+					<div class="section-title">
+						<h2>2F 电脑数码/配件</h2>
+						<ul class="section-ul">
+							<li><a href="##">二合一电脑</a></li>
+							<li>|</li>
+							<li><a href="##">商务本</a></li>
+							<li>|</li>
+							<li><a href="##">游戏本 </a></li>
+							<li>|</li>
+							<li><a href="##">iPad </a></li>
+							<li>|</li>
+							<li><a href="##">联想小Y </a></li>
+							<li>|</li>
+							<li><a href="##">尼康D750</a></li>
+							<li>|</li>
+							<li><a href="##">佳能70D</a></li>
+						</ul>
+					</div>	
+					<div class="clearfix">
+						<div class="main-figure">
+							<a href="##"><img src="../img/shouye/img27.jpg"/></a>
+						</div>
+						<div class="figure-list">
+							<ul>
+								<li class="item wide">
+									<div class="focus-inner" id="focusTwo">
+										<ul class="mobileFocus" id="mobileFocus">
+											<li><a href="##"><img src="../img/shouye/img28.jpg"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img29.jpg"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img30.jpg"/></a></li>	
+										</ul>
+										<div id="prev2" class="prev0">&lt;</div>
+										<div id="next2" class="next0">&gt;</div>
+										<div id="tab2" class="tab0">
+											<div class="active"></div>
+											<div class=""></div>
+											<div class=""></div>
+										</div>
+									</div>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">神舟 战神 K610D-i7 D2</a>
+									</div>	
+									<p>i7处理器 尽享畅玩</p>
+									<a href="#" class="pic"><img src="../img/shouye/img31.jpg"/></a>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">联想 G40-80影音娱乐本</a>
+									</div>	
+									<p>强劲性能 限时抢购</p>
+									<a href="#" class="pic"><img src="../img/shouye/img32.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想 710S 256G高配</a>
+									</div>	
+									<p>时尚轻薄本 劲爆特惠</p>
+									<a href="#" class="pic"><img src="../img/shouye/img33.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">Acer暗影骑士2</a>
+									</div>	
+									<p>GTX960M炫薄游戏本热</p>
+									<a href="#" class="pic"><img src="../img/shouye/img34.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想小新Air 12.2</a>
+									</div>	
+									<p>特惠低价！限时抢购！</p>
+									<a href="#" class="pic"><img src="../img/shouye/img35.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">小新700电竞版</a>
+									</div>	
+									<p>限时直降500元</p>
+									<a href="#" class="pic"><img src="../img/shouye/img36.jpg"/></a>
+								</li>
+							</ul>		
+						</div>	
+					</div>
+					<div class="brand-list">
+						<ul>
+							<li><a href="##"><img src="../img/shouye/small0.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small1.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small2.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small3.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small5.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small6.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small7.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small8.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small9.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small10.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section mobile-section" id="five">
+					<div class="section-title">
+						<h2>3F 智能数码/家电</h2>
+						<ul class="section-ul">
+							<li><a href="##">数码相机</a></li>
+							<li>|</li>
+							<li><a href="##">智能手环</a></li>
+							<li>|</li>
+							<li><a href="##">游戏机 </a></li>
+							<li>|</li>
+							<li><a href="##">移动电源 </a></li>
+							<li>|</li>
+							<li><a href="##">平板电视 </a></li>
+							<li>|</li>
+							<li><a href="##">煮蛋器</a></li>
+						</ul>
+					</div>	
+					<div class="clearfix">
+						<div class="main-figure">
+							<a href="##"><img src="../img/shouye/img37.jpg"/></a>
+						</div>	
+						<div class="figure-list">
+							<ul>
+								<li class="item wide">
+									<div class="focus-inner" id="focusThree">
+										<ul class="mobileFocus" id="mobileFocus">
+											<li><a href="##"><img src="../img/shouye/img38.jpg"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img39.jpg"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img40.jpg"/></a></li>	
+										</ul>	
+										<div id="prev3" class="prev0">&lt;</div>
+										<div id="next3" class="next0">&gt;</div>
+										<div id="tab3" class="tab0">
+											<div class="active"></div>
+											<div class=""></div>
+											<div class=""></div>
+										</div>
+									</div>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">神舟 战神 K610D-i7 D2</a>
+									</div>	
+									<p>i7处理器 尽享畅玩</p>
+									<a href="#" class="pic"><img src="../img/shouye/img41.png"/></a>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">联想 G40-80影音娱乐本</a>
+									</div>	
+									<p>强劲性能 限时抢购</p>
+									<a href="#" class="pic"><img src="../img/shouye/img42.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想 710S 256G高配</a>
+									</div>	
+									<p>时尚轻薄本 劲爆特惠</p>
+									<a href="#" class="pic"><img src="../img/shouye/img43.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">Acer暗影骑士2</a>
+									</div>	
+									<p>GTX960M炫薄游戏本热</p>
+									<a href="#" class="pic"><img src="../img/shouye/img44.png"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想小新Air 12.2</a>
+									</div>	
+									<p>特惠低价！限时抢购！</p>
+									<a href="#" class="pic"><img src="../img/shouye/img45.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">小新700电竞版</a>
+									</div>	
+									<p>限时直降500元</p>
+									<a href="#" class="pic"><img src="../img/shouye/img46.png"/></a>
+								</li>
+							</ul>		
+						</div>
+					</div>
+					<div class="brand-list">
+						<ul>
+							<li><a href="##"><img src="../img/shouye/small0.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small1.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small2.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small3.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small5.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small6.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small7.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small8.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small9.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small10.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section computer-section" id="six">
+					<div class="section-title">
+						<h2>4F DIY硬件/外设</h2>
+						<ul class="section-ul">
+							<li><a href="##">内存</a></li>
+							<li>|</li>
+							<li><a href="##">技嘉</a></li>
+							<li>|</li>
+							<li><a href="##">机械键盘 </a></li>
+							<li>|</li>
+							<li><a href="##">发烧级显卡 </a></li>
+							<li>|</li>
+							<li><a href="##">华硕主板 </a></li>
+							<li>|</li>
+							<li><a href="##">DIY主机</a></li>
+						</ul>
+					</div>	
+					<div class="clearfix">
+						<div class="main-figure">
+							<a href="##"><img src="../img/shouye/img47.jpg"/></a>
+						</div>
+						<div class="figure-list">
+							<ul>
+								<li class="item wide">
+									<div class="focus-inner" id="focusFour">
+										<ul class="mobileFocus" id="mobileFocus">
+											<li><a href="##"><img src="../img/shouye/img48.png"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img49.jpg"/></a></li>
+											<li><a href="##"><img src="../img/shouye/img50.png"/></a></li>	
+										</ul>	
+										<div id="prev4" class="prev0">&lt;</div>
+										<div id="next4" class="next0">&gt;</div>
+										<div id="tab4" class="tab0">
+											<div class="active"></div>
+											<div class=""></div>
+											<div class=""></div>
+										</div>
+									</div>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">神舟 战神 K610D-i7 D2</a>
+									</div>	
+									<p>i7处理器 尽享畅玩</p>
+									<a href="#" class="pic"><img src="../img/shouye/img51.jpg"/></a>
+								</li>
+								<li class="item tall">
+									<div class="title">
+										<a href="##">联想 G40-80影音娱乐本</a>
+									</div>	
+									<p>强劲性能 限时抢购</p>
+									<a href="#" class="pic"><img src="../img/shouye/img52.png"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想 710S 256G高配</a>
+									</div>	
+									<p>时尚轻薄本 劲爆特惠</p>
+									<a href="#" class="pic"><img src="../img/shouye/img53.png"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">Acer暗影骑士2</a>
+									</div>	
+									<p>GTX960M炫薄游戏本热</p>
+									<a href="#" class="pic"><img src="../img/shouye/img54.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">联想小新Air 12.2</a>
+									</div>	
+									<p>特惠低价！限时抢购！</p>
+									<a href="#" class="pic"><img src="../img/shouye/img55.jpg"/></a>
+								</li>
+								<li class="item">
+									<div class="title">
+										<a href="##">小新700电竞版</a>
+									</div>	
+									<p>限时直降500元</p>
+									<a href="#" class="pic"><img src="../img/shouye/img56.jpg"/></a>
+								</li>
+							</ul>		
+						</div>
+					</div>
+					<div class="brand-list"><ul>
+							<li><a href="##"><img src="../img/shouye/small0.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small1.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small2.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small3.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small10.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small5.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small6.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small7.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small8.jpg"/></a></li>
+							<li><a href="##"><img src="../img/shouye/small9.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="img57">
+					<img src="../img/shouye/img57.jpg"/>
+				</div>	
+			</div><!-- wraper 结束 -->
+			<div class="float-side" id="float-side">
+				<ul>
+					<li>-1F<span>精品购</span></li>
+					<li>0F<span>特色购</span></li>
+					<li>1F<span>手机</span></li>
+					<li>2F<span>电脑</span></li>
+					<li>3F<span>智能</span></li>
+					<li>4F<span>DIY</span></li>
+				</ul>
+			</div><!-- float-side 结束 -->
+		</div><!-- main 结束  -->
+		<div class="footer"></div><!-- footer 结束  -->
+		<div class="side-bar" id="side-bar"> <!-- 足迹&#xe611;  订单&#xe60f;  优惠券&#xe610;  购物车&#xe603;-->
+			
+		</div><!-- sideBar 结束  -->
+		<script>
+			loadHtml("common/header.html",".header");
+			loadHtml("common/nav.html",".nav-container");
+			loadHtml("common/sidebar.html","#side-bar");
+			loadHtml("common/footer.html",".footer")
+		</script>
+	</body>
+</html>

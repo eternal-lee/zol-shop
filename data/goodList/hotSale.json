@@ -1,0 +1,32 @@
+{
+	"g0":{
+		"num":1,
+		"href":"##",
+		"src":"../img/shopLists/bar0.jpg",
+		"title":"苹果 iPhone 4S（8GB）",
+		"price":"￥619"
+	},
+	"g1":{
+		"num":2,
+		"href":"##",
+		"src":"../img/shopLists/bar1.jpg",
+		"title":"魅族 MX6（4GB/全网通）",
+		"price":"￥1468"
+	},
+	"g2":{
+		"num":3,
+		"href":"##",
+		"src":"../img/shopLists/bar2.jpg",
+		"title":"乐视 乐Max 2（4GB版/全网通）",
+		"price":"￥1378"
+	},
+	"g3":{
+		"num":4,
+		"href":"##",
+		"src":"../img/shopLists/bar3.jpg",
+		"title":"联想ZUK Z2（4GB RAM/全网通）",
+		"price":"￥1499"
+	}
+}
+
+

@@ -1,0 +1,54 @@
+{
+	"g0":{
+			"id":"1",
+			"href":"goodDetail.html",
+			"src":"../img/shopLists/img0.jpg",	
+			"title":"华为 P9（高配版/全网通）",
+			"subTitle":"骁龙芯片双卡双待指纹识别",
+			"label":"热销价",
+			"sale_price":"¥<b>3337.00</b>",
+			"hot":"热卖"	
+		},
+	"g1":{
+			"id":"2",
+			"href":"goodDetail.html",
+			"src":"../img/shopLists/img1.jpg",	
+			"title":"苹果 iPhone 7 现货",
+			"subTitle":"颜色齐全 当天发货",
+			"label":"热销价",
+			"sale_price":"¥<b>5180.00</b>",
+			"hot":"热卖"	
+		},	
+	"g2":{
+			"id":"3",
+			"href":"goodDetail.html",
+			"src":"../img/shopLists/img3.jpg",	
+			"title":"三星 GALAXY S7 G9300",
+			"subTitle":"骁龙芯片双卡双待指纹识别",
+			"label":"热销价",
+			"sale_price":"¥<b>3337.00</b>",
+			"hot":"热卖"	
+		},	
+	"g3":{
+			"id":"4",
+			"href":"goodDetail.html",
+			"src":"../img/shopLists/img4.jpg",	
+			"title":"三星 GALAXY C7（C7000/全网通）",
+			"subTitle":"骁龙芯片双卡双待指纹识别",
+			"label":"热销价",
+			"sale_price":"¥<b>3337.00</b>",
+			"hot":"热卖"	
+		},	
+	"g4":{
+			"id":"5",
+			"href":"goodDetail.html",
+			"src":"../img/shopLists/img5.jpg",	
+			"title":"三星 GALAXY C7（C7000/全网通）",
+			"subTitle":"骁龙芯片双卡双待指纹识别",
+			"label":"热销价",
+			"sale_price":"¥<b>3337.00</b>",
+			"hot":"热卖"	
+		}	
+}
+
+

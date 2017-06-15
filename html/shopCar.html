@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车——查看购物车</title>
+		<link rel="shortcut icon" type="image/icon" href="../img/title.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopCar/shopCar.css" />
+		<style>
+			.box{
+				width:300px;height:200px;margin:100px auto;text-align:center;padding-left:50px;
+				font-size:18px;background:#fff url(../img/shopCar/shopcar.png) no-repeat left center;
+			}
+			.box h1{font-size:25px;margin-bottom:15px;}
+			.box h1 a{font-size:20px;color:#f00;}
+		</style>
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		<script>
+			$(function(){
+				$.ajax({
+					type:"get",
+					url:"../php/checkLogin.php",
+					async:true,
+					success:function(data){
+						var data = JSON.parse(data);
+						if(data.user==false){
+								$(".shopcar-tip").show()
+								$("#form").hide()
+								var tip = '<h1 style="font-size:18px;">用户未登录，请先<a style="font-size:16px;color:#f00;" href="login.html">&nbsp;登录&nbsp;</a><h1>';
+								$(".shopcar-tip").html(tip)
+						}else{
+							var goods = $.cookie("carts")? JSON.parse($.cookie("carts")) : false;
+							if(goods==false){
+								$(".shopcar-tip").show();
+								$("#form").hide();
+							}else{
+								$(".shopcar-tip").hide();
+								$("#form").show();
+							}
+						}
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript" src="../lib/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/common/common.js" ></script>
+		<script type="text/javascript" src="../js/shopCar/shopCar0.js" ></script>
+	</head>
+	<body>
+		<!--header -->
+		<div class="header"></div>	
+		<!-- logo -->
+		<div class="head_logo">
+			<div class="logo">
+				<a href="index.html">
+					<img src="../img/shopCar/logo0.jpg"/>
+					<img src="../img/shopCar/logo1.png"/>
+				</a>	
+			</div>
+			<div class="flow-step">
+				<ul>
+					<li class="active">加入购物车</li>
+					<li><a href="pay.html">下订单</a></li>
+					<li>去付款</li>
+					<li>确认收货</li>
+					<li>评价</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 购物物品 区 -->
+		<div class="wrapper">
+			<dl class="shopcar-tip">
+				<dt>您的购物车里还没有商品，您可以：</dt>
+				<dd>去
+					<a href="shopLists.html">挑选商品</a>
+				</dd>
+			</dl>
+			<form method="post" id="form">
+				<div class="cart-state mt">
+					<p>购物车状态<em>(<span id="jianshu">0</span>/30)</em></p>
+					<div class="total">
+					<input type="button" class="accounting-btn" value="去结算" />
+						<span>总计（不含运费）：
+							<em>￥</em>
+							<em class="total-cart-price">0</em>
+						</span>
+					</div>
+				</div>	
+				<div class="order-table mt20">
+					<table width="100%">
+						<tbody id="tbody">
+							<tr>
+								<th class="th-1"><input type="checkbox" checked value="1" id="checkAll"/>全选</th>
+								<th class="th-2">所选商品</th>
+								<th class="th-3">单价（元）</th>
+								<th class="th-4">数量</th>
+								<th class="th-5">优惠</th>
+								<th class="th-6">小计（元）</th>
+								<th class="th-7">操作</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class="total-price">
+						商品总价<span>（不含运费）</span>：<em>￥</em>
+						<em class="total-cart-price">0</em>
+					</div>
+					<div class="order-foot">
+						<a href="javascript:" id="allRemove">全部删除</a>
+						<a href="shopLists.html" class="go-shopping">&lt;&lt;继续购物</a>
+						<input type="button" class="accounting-btn" value="去结算">
+					</div>
+				</div>
+			</form>
+		</div>	
+		<!-- 喜欢区 -->
+		<div class="wrapper">
+			<div class="modgoods">
+				<ul class="modgoods-tab">
+					<li class="cur">猜你喜欢</li>
+					<!--<li>最近浏览的商品</li>
+					<li>我的收藏</li>-->
+				</ul>
+				<div class="modgoods-tabbox">
+					<ul class="modgoods-list"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer" style="height:141px;">
+			<p class="links">
+				<a href="##">关于商城</a>|
+				<a href="##">营销中心</a>|
+				<a href="##">服务中心</a>|
+				<a href="##">联系我们</a>|
+				<a href="##">发展历程</a>|
+				<a href="##">媒体报道</a>
+			</p>
+			<p>
+				<span class="copyright">&copy;
+					<script>
+						var now = new Date();
+						var nowYear = now.getFullYear();
+						document.write(nowYear);
+					</script>
+					购物商城在线 作者 版权所有. 京ICP备09041801号-182 
+					<a href="javascript:void(0)">京ICP证010391号</a>
+				</span>
+			</p>
+			<div class="bottom">
+				<a href="##"><img src="../img/shopCar/beian.png"/></a>
+				<a href="##"><img src="../img/shopCar/jingcha.png"/></a>
+				<a href="##"><img src="../img/shopCar/cert.png"/></a>
+			</div>
+		</div>
+		<script>
+			loadHtml("common/header.html",".header");
+		</script>
+		<script type="text/javascript" src="../js/common/checkuser.js" ></script>
+	</body>
+</html>

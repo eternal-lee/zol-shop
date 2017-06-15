@@ -1,0 +1,40 @@
+{
+	"g0":{
+			"href":"##",
+			"txt":"乐视 乐Max 2 全网通",
+			"p":"限时促销 820芯片",
+			"src":"../img/shouye/img21.jpg"
+		},
+	"g1":{
+			"href":"##",
+			"txt":"魅族 PRO 6 全网通",
+			"p":"限时低价 全新设计",
+			"src":"../img/shouye/img22.jpg"
+		},
+	"g2":{
+			"href":"##",
+			"txt":"360 手机N4S",
+			"p":"4GB+64GB 仅售1449",
+			"src":"../img/shouye/img23.jpg"
+		},
+	"g3":{
+			"href":"##",
+			"txt":"酷派 cool1（全网通）",
+			"p":"32G内存 仅售1098元！",
+			"src":"../img/shouye/img24.jpg"
+		},
+	"g4":{
+			"href":"##",
+			"txt":"华为p9（全网通）",
+			"p":"（3G+32G）直降460",
+			"src":"../img/shouye/img22.jpg"
+		},
+	"g5":{
+			"href":"##",
+			"txt":"小米Max 全网通16GB",
+			"p":"下单赠品 仅售999元！",
+			"src":"../img/shouye/img26.jpg"
+		}				
+}
+
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="shortcut icon" type="image/icon" href="../img/title.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopLists/shopLists.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+		
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header"></div>
+		<div class="main">
+			<!-- search 搜索框  -->
+			<div class="search" id="search">
+				<a href="index.html"><img src="../img/shouye/shop_182x60.png" class="img1"/></a><span>购物商城在线网上商场</span>
+				<div class="search_input" id="search_input">
+					<input type="text" id="searchTxt" class="searchTxt" /><input type="button" id="searchBtn" class="searchBtn" value="搜索">
+					<div id="tip" style="top:37px;">
+						<ul id="tipList"></ul>
+					</div>
+				</div>
+				<a href="##"><img src="../img/shouye/0.jpg" class="img0"/></a>
+				<ul class="moreLink">
+					<a href="##">三星s7 Edge</a>
+					<a href="##">华为P9</a>
+					<a href="##">戴尔小XPS仅4999！</a>
+					<a href="##">GTX1060</a>
+					<a href="##"> 九阳豆浆机直降100！</a>
+					<a href="##">热销机械键盘</a>
+				</ul>	
+			</div>	
+			<!-- 导航 -->
+			<div class="navBox">
+				<ol class="nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="shopLists.html">团购</a></li>
+					<li><a href="shopLists.html">手机馆</a></li>
+					<li><a href="shopLists.html">智能之家</a></li>
+					<li><a href="shopLists.html">DIY攒机馆</a></li>
+					<li><a href="shopLists.html">限时抢购</a></li>
+				</ol>
+				<div class="nav-tip"><a href="http://tuan.zol.com/26438.html" target="_blank">苹果 iPhone 7 亮黑色 仅限10台！</a></div>
+				<div class="nav-container"></div>	<!-- 二级导航 加载 -->
+			</div> 
+			<!-- 导航结束 -->
+			<!-- banner -->
+			<div class="banner">
+				<div class="focus" id="focus">
+					<ul class="focus_ul" id="focus_ul">
+						<li><a href="##"><img src="../img/shopLists/banner0.jpg" alt="" /></a></li>
+						<li><a href="##"><img src="../img/shopLists/banner1.jpg" alt="" /></a></li>
+						<li><a href="##"><img src="../img/shopLists/banner2.jpg" alt="" /></a></li>
+					</ul>
+					<div class="tab" id="tab">
+						<div class="active">1</div>
+						<div class="">2</div>
+						<div class="">3</div>
+					</div>
+				</div>	
+				<div class="left_banner">
+					<dl>
+						<dt>选购热点</dt>
+						<dd>
+						<a href="##">千元机</a>|<a href="##">拍照利器</a>|<a href="##">指纹识别</a>|
+						<a href="##">大屏幕</a>|<a href="##">双卡双待</a>|<a href="##">轻薄机身</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>热门品牌</dt>
+						<dd>
+							<a href="##">三星</a>|<a href="##">华为</a><a href="##">苹果</a>|
+							<a href="##">OPPO</a>|<a href="##">联想</a><a href="##">HTC</a>|
+							<a href="##">小米</a>|<a href="##">魅族</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>价格区间</dt>
+						<dd>
+							<a href="##">千元以下</a>|<a href="##">1000-2000元</a>|<a href="##">2000-3000元</a>|
+							<a href="##">3000-4000元</a>|<a href="##">4千以上</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="right_banner"><img src="../img/shopLists/banner3.png"/></div>
+			</div>	
+			<!--明星单品-->
+			<div class="wrapper">
+				<div class="section">
+					<div class="h">
+						<span class="main-title">明星单品</span><span class="small-title">大牌来袭，只为你选</span>
+					</div>
+					<ul class="star-list"></ul>
+				</div>
+			</div>
+			<div id="msg">已成功加入购物车！</div> 
+			<!--品牌精选-->
+			<div class="wrapper">
+				<div class="section">
+					<div class="h">
+						<span class="main-title">品牌精选</span><span class="small-title">大牌来袭，只为你选</span>
+						<div class="more"><a href="##">更多品牌</a>&gt;</div>
+					</div>
+					<ul class="brand-choice"></ul>
+					<ul class="brand-list"></ul>
+				</div>
+			</div>
+			<!--千元强机-->
+			<div class="wrapper">
+				<div class="section">
+					<div class="h">
+						<span class="main-title">千元强机</span><span class="small-title">经济实用，便宜有好货</span>
+						<div class="more"><a href="##">更多推荐</a>&gt;</div>
+					</div>
+					<div class="section-content">
+						<div class="main-figure">
+							<a href="#"><img src="../img/shopLists/img12.jpg"/></a>
+							<div class="filtrate">
+								<div class="xian">&nbsp;</div><h2 class="hd">帮您选</h2><div class="xian">&nbsp;</div>
+								<dl>
+									<dt>手机特点</dt>
+									<dd>
+										<a href="##">轻薄机身</a><a href="##">双卡双待</a><a href="##">大屏幕</a>
+										<a href="##">大电池容量</a><a href="##">拍照利器</a><a href="##">外观时尚</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>购机预算</dt>
+									<dd>
+										<a href="##">500以下</a><a href="##">500-1000</a><a href="##">1000-2000</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<ul class="figure-list" id="figure-list1"></ul>
+						<div class="hot_sale">
+							<h2 class="hd">一周热卖排行</h2>
+							<ul class="hot_ul" id="hot_ul1"></ul>
+						</div>
+					</div>	
+				</div>
+			</div>	
+			<div class="wrapper">
+				<div class="section">
+					<div class="h">
+						<span class="main-title">时尚潮机</span><span class="small-title">就是这个范儿</span>
+						<div class="more"><a href="#">更多推荐</a>&gt;</div>
+					</div>
+					<div class="section-content">
+						<div class="main-figure">
+							<a href="#"><img src="../img/shopLists/img19.jpg"/></a>
+							<div class="filtrate">
+								<div class="xian">&nbsp;</div><h2 class="hd">帮您选</h2><div class="xian">&nbsp;</div>
+								<dl>
+									<dt></dt>
+									<dd>
+										<a href="##">高人气</a><a href="##">销量热门</a><a href="##">指纹识别</a>
+										<a href="##">窄边框</a><a href="##">双4G</a><a href="##">自拍利器</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>屏幕尺寸</dt>
+									<dd>
+										<a href="##">6.0英寸以上</a><a href="##">5.6-5.9英寸</a><a href="##">5.5英寸</a>
+										<a href="##">5.1-5.4英寸</a><a href="##">5.0英寸</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<ul class="figure-list" id="figure-list2"></ul>
+						<div class="hot_sale">
+							<h2 class="hd">一周热卖排行</h2>
+							<ul class="hot_ul" id="hot_ul2"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="section">
+					<div class="h">
+						<span class="main-title">手机配件</span>
+						<div class="more"><a href="#">更多手机配件</a>&gt;</div>
+						<div class="links">
+							<a href="##">耳机</a>
+							<a href="##">移动电源</a>
+							<a href="##">充电器</a>
+							<a href="##">保护套</a>
+						</div>
+					</div>
+					<div class="section-content">
+						<ul class="phone-ul"></ul>
+					</div>
+					<ul class="page">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+					<div class="secOne"><img src="../img/shopLists/img33.jpg"/></div>
+				</div>
+			</div>	
+		
+		</div> <!--main 结束-->
+		
+		<div class="footer"></div>
+		<div class="louceng">
+			<ul>
+				<li>明星单品</li>
+				<li>品牌精选</li>
+				<li>千元强机</li>
+				<li>时尚潮机</li>
+				<li>手机配件</li>
+			</ul>
+		</div>
+		<!-- sideBar -->
+		<div class="side-bar" id="side-bar">
+			
+		</div><!-- sideBar 结束  -->
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../js/shopLists/jquery.min.js" ></script>
+		<script type="text/javascript" src="../lib/jquery.fly.min.js" ></script>
+		<script type="text/javascript" src="../lib/requestAnimationFrame.js" ></script>
+		<script type="text/javascript" src="../js/common/common.js" ></script>
+		<script type="text/javascript" src="../lib/commonTool.js" ></script>
+		<script type="text/javascript" src="../lib/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/shopLists/shopLists.js" ></script>
+		<script>
+			loadHtml("common/header.html",".header")
+			loadHtml("common/nav.html",".nav-container");
+			loadHtml("common/sidebar.html","#side-bar");
+			loadHtml("common/footer.html",".footer");
+		</script>
+		<script type="text/javascript" src="../js/common/checkuser.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+.header .h_top{width:1000px;margin:0 auto;}
+/*  head_logo*/
+.head_logo{ margin: 0 auto; padding: 30px 0;width: 1000px;overflow:hidden;}
+.logo{float:left;}
+.flow-step{float:right;}
+.flow-step li {
+	float: left;width: 90px; padding: 0 14px 0 0;background:#e6e6e6 url(../../img/shopCar/step-bg.png) no-repeat 100% -74px;
+	font-size:14px;line-height:36px;text-align: center;
+	}
+.flow-step li.active{background-position:100% -37px;background-color:#e02d2d;color: #fff;padding:0 14px;}	
+/*收货人信息*/
+.wrapper{width:1000px;height:auto;margin:0 auto;overflow:hidden;}
+.container {margin: 0 0 10px;border: 1px solid #e3e3e3;}
+.container table {width: 100%;border-collapse: collapse;}
+tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
+table {border-collapse: collapse;border-spacing: 0;table-layout: fixed;}
+tr {display: table-row;vertical-align: inherit;border-color: inherit;}
+.container .cell-1 {width: 118px;font-size:14px;line-height:22px;text-align: center;}
+.container .cell-2 { padding: 10px;border-left: 1px solid #e3e3e3;}
+.address-list li {position: relative;margin: 0 0 2px;padding: 6px 88px 6px 10px; color: #666;zoom: 1;}
+.address-list li label{cursor:default;}
+.address-list li label input{margin:0 10px 0 0;}
+.address-list a{color: #36c;}
+.address-list .operate {position: absolute;top: 6px;right: 10px;}
+.address-list .operate a { margin: 0 0 0 20px;}
+.address-list .operate a:hover{color:#B90000;text-decoration:underline;}
+.address-list .add-edits{background: #fff5d6;}
+.address-list label input{margin: 0 10px 0 0;}
+.closeBtn {position: absolute;top: 6px;right: 10px;}
+.infor{padding: 15px 0 5px 22px;overflow:hidden;}
+.infor dl {position: relative;padding: 0 0 10px 75px;overflow: hidden;}
+.infor dt {position: absolute;top: 0;left: 0;width: 75px;font: 12px/26px "Arial";color: #666;}
+.infor .xh {padding: 0 8px 0 0;color: #f30;}
+em{font-style:normal;}
+.infor .text {
+	color: #000;float: left;margin: 0 10px 0 0; padding: 2px 5px;width: 118px;height: 20px;
+    border: 1px solid #d6d6d6;font: 12px/20px "Arial";
+    }
+.infor .address .text {width: 338px;}
+select{float:left;}
+.infor .number{position:relative;zoom:1;overflow: hidden;}
+.infor .number dl {float: left;margin: 0 20px 0 0;width: 152px;}
+.infor .tips{float: left;color: #999;line-height:25px;}
+.infor .number .fixed-line {padding: 0 0 10px 75px;width: 332px;}
+.setup-default {display: block;padding: 7px 0 0 75px;color: #333;}
+.checkbox{margin-top:2px;vertical-align: middle;font-size: 100%;}
+.infor .w120-btn {margin: 15px 0 0 75px;}
+.w120-btn {
+	display: block;width: 120px;height: 30px;border: 0 none;cursor: pointer;text-align: center;
+    font: 14px/30px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";color: #fff; background-color:#B90000;
+    }
+.infor .error{color: #c00;float: left;font: 12px/26px "Arial";display: none;}    
+/*--   商品订单   --*/
+a{color:#36c;}
+tr {display: table-row;vertical-align: inherit;border-color: inherit;}
+.order-current{border: 2px solid #e02d2d;margin: 0 0 10px;}
+.order-current .cell-1 {width: 117px;font-size:14px;line-height:22px;text-align:center;}
+.order-current .cell-1 label input {margin: -1px 10px 0 0;vertical-align: middle;font-size: 100%;}
+.order-current .cell-2 {border-left: 1px solid #e3e3e3;}
+.order-current .goods th {
+	padding: 5px 10px 6px;height: 18px;text-align: center;background: #f5f5f5;
+	font: 12px/18px "Arial";color: #666;border-right: 1px solid #fff;
+}
+.goods td {padding: 10px;text-align: center;color: #666;line-height: 22px;vertical-align: top;border-top: 1px solid #f5f5f5;}
+.goods .information {width: 298px;}
+.goods .color-suits {width: 85px;}
+.goods .saletype {width: 71px;}
+.goods .price {width: 60px;}
+.goods .agio {width: 100px;}
+.goods .amount {width: 30px;}
+.order-current .goods .total {padding: 5px 9px 6px 10px;width:70px;}
+.goods .pic {float: left;margin: 0 0 0 10px;width: 62px; height: 62px;}
+.goods .title {float: left;padding: 0 10px;width:195px;height: 36px;font: 12px/18px "Arial"; overflow: hidden;text-align: left;}
+
+.order-note {border: 1px solid #e3e3e3;}
+.order-note .cell-1 {width: 118px;font: 14px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";text-align: center;}
+.order-note .cell-2 {padding: 20px 20px 15px;width: 580px;border-left: 1px solid #e3e3e3;}
+
+    
+.order-note .cell-2 textarea {
+	color: rgb(153, 153, 153);float: left;display: block;padding: 2px 5px;
+    width: 468px;height: 66px;border: 1px solid #d6d6d6;resize: none;font: 12px/18px "Arial";overflow-y: auto;
+    }
+.order-note .cell-2 span {float: left;padding: 59px 0 0 10px;color: #666;}
+.order-note .cell-3 {border-left: 1px solid #e3e3e3;}
+.total-price li {position: relative;padding: 0 20px 0 106px;height: 30px;font: 12px/30px "Arial";color: #666;text-align: right;}
+.total-price span {position: absolute;top: 0;left: 0;width: 90px;}
+.total-price .total {font-size: 24px;color: #c71010;font-weight: bold;}
+
+
+/* 提交  */
+.submit{padding: 32px 0 0;text-align: right;overflow:hidden;}
+.submit-btn, .submit-loading, .fail-submit {
+	float: right;display: block;margin: 0 0 0 10px;width: 160px;cursor: pointer;
+    height: 46px;overflow: hidden;color:#fff;font-size:20px;background:#CC0000;border: 0 none;
+    }
+/* 二维码  */
+.pay{display:none;width:300px;height:240px;border:1px solid #999;position:fixed;left:35%;top:30%;background:rgba(255,255,255,.8);z-index:999999;padding:25px 0 0 0;}
+.pay p{text-align:center;font-size:20px;line-height:25px;height:25px;}
+.pay img{width:200px;height:200px;margin:0 50px;vertical-align:middle;padding:3px;}
+.pay .close{position:absolute;right:0;top:0;padding:5px;font-size:20px;cursor:pointer;}
+
+
+/*底部 footer*/
+.footer1 {margin: 40px auto 0;padding: 5px 0 20px;width: 1000px;height:auto;text-align: center;border-top: 1px solid #e3e3e3;}
+.footer1 .links {padding: 14px 0 6px;color: #ccc;}
+.footer1 .links a {margin: 0 10px;color: #134ba0; cursor: pointer;}
+.footer1 .links a:hover{color:#f56709;text-decoration:underline;}
+.footer1 p .copyright {color: #333;display: inline-block; height: 23px;padding-left: 28px;position: relative; line-height: 23px;}
+.footer1 p .copyright a {color: #36c;}
+.bottom{padding:12px 0 0;}
+.bottom a{vertical-align: middle;margin-right: 8px;}
