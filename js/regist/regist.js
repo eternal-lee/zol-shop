@@ -5,7 +5,9 @@
 	strReg:/^[a-zA-Z]$/,
 	tsReg:/^[^\u4e00-\u9fa5a-zA-Z0-9]$/,
 	emailReg:/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/,
-	mobileReg:/^1[3|4|5|7|8]\d{9}$/
+	mobileReg:/^1[3|4|5|7|8]\d{9}$/,
+	moneyReg1:/^([1-9]\d{0,9}|0)([.]?|(\.\d{1,2})?)$/, /*金额 保留两位有效数字 */ 
+	moneyReg2:/^([1-9]\d{0,9}|0)([.]?|(\.\d+)?)$/   /*金额 保留一位、多位有效数字 */  
 }
 window.onload = function(){
 	var oForm = document.getElementsByTagName("form")[0];
